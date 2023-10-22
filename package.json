@@ -1,9 +1,9 @@
 {
   "name": "psulauncher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "productName": "PSU-Launcher",
   "description": "Modded Minecraft Launcher",
-  "author": "FX Drouard (https://github.com/FX8Drouard/)",
+  "author": "FX Drouard (https://github.com/FX-Drouard/)",
   "license": "UNLICENSED",
   "homepage": "https://github.com/FX-Drouard/PSU-Launcher",
   "bugs": {
