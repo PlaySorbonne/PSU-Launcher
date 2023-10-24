@@ -1,13 +1,13 @@
 {
   "name": "psulauncher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "productName": "PSU-Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "FX Drouard (https://github.com/FX-Drouard/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/FX-Drouard/PSU-Launcher",
+  "homepage": "https://github.com/PlaySorbonne/PSU-Launcher",
   "bugs": {
-    "url": "https://github.com/FX-Drouard/PSU-Launcher/issues"
+    "url": "https://github.com/PlaySorbonne/PSU-Launcher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FX-Drouard/PSU-Launcher.git"
+    "url": "git+https://github.com/PlaySorbonne/PSU-Launcher.git"
   }
 }

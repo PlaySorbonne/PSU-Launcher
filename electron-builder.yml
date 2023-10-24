@@ -1,5 +1,5 @@
 appId: 'psulauncher'
-productName: 'PSU Launcher'
+productName: 'PSU-Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2023 FX Drouard'
