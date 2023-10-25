@@ -1,10 +1,10 @@
 {
   "name": "psulauncher",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "productName": "PSU-Launcher",
   "description": "Le launcher officiel de PSU",
   "author": "FX Drouard (https://github.com/FX-Drouard/)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/PlaySorbonne/PSU-Launcher",
   "bugs": {
     "url": "https://github.com/PlaySorbonne/PSU-Launcher/issues"
