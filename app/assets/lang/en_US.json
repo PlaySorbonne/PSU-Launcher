@@ -1,6 +1,6 @@
 {
     "html": {
-        "avatarOverlay": "Edit"
+        "avatarOverlay": "Editer"
     },
     "js": {
         "login": {
@@ -35,14 +35,14 @@
                     "title": "Error During Login:<br>Unknown Error"
                 }
             },
-            "login": "LOGIN",
-            "loggingIn": "LOGGING IN",
+            "login": "CONNEXION",
+            "loggingIn": "CONNEXION",
             "success": "SUCCESS",
-            "tryAgain": "Try Again"
+            "tryAgain": "REESAYEZ"
         },
         "landing": {
             "launch": {
-                "pleaseWait": "Please wait.."
+                "pleaseWait": "Merci de Patienter"
             }
         }
     }

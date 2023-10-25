@@ -1,8 +1,8 @@
 {
   "name": "psulauncher",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "productName": "PSU-Launcher",
-  "description": "Modded Minecraft Launcher",
+  "description": "Le launcher officiel de PSU",
   "author": "FX Drouard (https://github.com/FX-Drouard/)",
   "license": "UNLICENSED",
   "homepage": "https://github.com/PlaySorbonne/PSU-Launcher",
