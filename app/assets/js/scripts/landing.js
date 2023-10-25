@@ -250,7 +250,7 @@ const refreshServerStatus = async (fade = false) => {
 
         const servStat = await getServerStatus(47, serv.hostname, serv.port)
         console.log(servStat)
-        pLabel = 'PLAYERS'
+        pLabel = 'JOUEURS'
         pVal = servStat.players.online + '/' + servStat.players.max
 
     } catch (err) {
