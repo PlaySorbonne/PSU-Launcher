@@ -165,7 +165,7 @@ function updateSelectedServer(serv){
     }
     ConfigManager.setSelectedServer(serv != null ? serv.rawServer.id : null)
     ConfigManager.save()
-    server_selection_button.innerHTML = '\u2022 ' + (serv != null ? serv.rawServer.name : 'No Server Selected')
+    server_selection_button.innerHTML = '\u2022 ' + (serv != null ? serv.rawServer.name : 'Aucun server selectionnée')
     if(getCurrentView() === VIEWS.settings){
         animateSettingsTabRefresh()
     }
@@ -317,13 +317,13 @@ async function asyncSystemScan(effectiveJavaOptions, launchAfter = true){
         // If the result is null, no valid Java installation was found.
         // Show this information to the user.
         setOverlayContent(
-            'No Compatible<br>Java Installation Found',
-            `In order to join WesterosCraft, you need a 64-bit installation of Java ${effectiveJavaOptions.suggestedMajor}. Would you like us to install a copy?`,
-            'Install Java',
-            'Install Manually'
+            'Aucune version de<br>Java Trouvée',
+            `Afin de rejoindre PSU, vous avez besoin de la version 64-bit de Java ${effectiveJavaOptions.suggestedMajor}. Voulez-vous installer localement java pour le launcher?`,
+            'Installer Java',
+            'Installer Manuelement'
         )
         setOverlayHandler(() => {
-            setLaunchDetails('Preparing Java Download..')
+            setLaunchDetails('Préparation du téléchargement de Java..')
             toggleOverlay(false)
             
             try {
@@ -337,7 +337,7 @@ async function asyncSystemScan(effectiveJavaOptions, launchAfter = true){
             $('#overlayContent').fadeOut(250, () => {
                 //$('#overlayDismiss').toggle(false)
                 setOverlayContent(
-                    'Java is Required<br>to Launch',
+                    'Java est requis<br>pour jouer',
                     `A valid x64 installation of Java ${effectiveJavaOptions.suggestedMajor} is required to launch.<br>`,
                     'I Understand',
                     'Go Back'
@@ -456,7 +456,7 @@ async function dlAsync(login = true) {
 
     const loggerLaunchSuite = LoggerUtil.getLogger('LaunchSuite')
 
-    setLaunchDetails('Loading server information..')
+    setLaunchDetails('Chargement des informations du serveur..')
 
     let distro
 
@@ -478,7 +478,7 @@ async function dlAsync(login = true) {
         }
     }
 
-    setLaunchDetails('Please wait..')
+    setLaunchDetails('Merci de Patienter..')
     toggleLaunchArea(true)
     setLaunchPercentage(0, 100)
 
@@ -503,8 +503,8 @@ async function dlAsync(login = true) {
         }
     })
 
-    loggerLaunchSuite.info('Validating files.')
-    setLaunchDetails('Validating file integrity..')
+    loggerLaunchSuite.info('Validation des fichiers.')
+    setLaunchDetails('Validation de l\'integrité des fichiers..')
     let invalidFileCount = 0
     try {
         invalidFileCount = await fullRepairModule.verifyFiles(percent => {
@@ -519,8 +519,8 @@ async function dlAsync(login = true) {
     
 
     if(invalidFileCount > 0) {
-        loggerLaunchSuite.info('Downloading files.')
-        setLaunchDetails('Downloading files..')
+        loggerLaunchSuite.info('Téléchargement des fichiers.')
+        setLaunchDetails('Téléchargement des fichiers..')
         setLaunchPercentage(0)
         try {
             await fullRepairModule.download(percent => {
@@ -533,7 +533,7 @@ async function dlAsync(login = true) {
             return
         }
     } else {
-        loggerLaunchSuite.info('No invalid files, skipping download.')
+        loggerLaunchSuite.info('Aucune donnée invalide, skipping download.')
     }
 
     // Remove download bar.
@@ -541,7 +541,7 @@ async function dlAsync(login = true) {
 
     fullRepairModule.destroyReceiver()
 
-    setLaunchDetails('Preparing to launch..')
+    setLaunchDetails('Préparation du lancement..')
 
     const mojangIndexProcessor = new MojangIndexProcessor(
         ConfigManager.getCommonDirectory(),
@@ -559,7 +559,7 @@ async function dlAsync(login = true) {
         const authUser = ConfigManager.getSelectedAccount()
         loggerLaunchSuite.info(`Sending selected account (${authUser.displayName}) to ProcessBuilder.`)
         let pb = new ProcessBuilder(serv, versionData, forgeData, authUser, remote.app.getVersion())
-        setLaunchDetails('Launching game..')
+        setLaunchDetails('Lancement du jeu..')
 
         // const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
         const SERVER_JOINED_REGEX = new RegExp(`\\[.+\\]: \\[CHAT\\] ${authUser.displayName} joined the game`)
