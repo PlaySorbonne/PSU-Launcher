@@ -51,3 +51,4 @@ Mettre cela dans `.vscode/launch.json`
   ]
 }
 ```
+Puis faire ctrl F5 pour lancer
