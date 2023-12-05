@@ -2,7 +2,7 @@
 Le Launcher Minecraft de l'asso PlaySorbonne Université
 
 ## Téléchargement et utilisation
-Pour télécharger le launcher [cliquez ici](launcher.playsorbonne.fr) 
+Pour télécharger le launcher [cliquez ici](https://github.com/PlaySorbonne/PSU-Launcher/releases/latest) 
 - le .exe pour `windows`
 - le .appimage pour `linux`
 - le .dmg pour `macos`
