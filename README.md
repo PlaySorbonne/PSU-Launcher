@@ -19,7 +19,7 @@ Pour télécharger le launcher [cliquez ici](launcher.playsorbonne.fr)
 - au lieu de `npm start` faite `npm run dist`
 - pour compiler sur une autre platform: `npm run dist:{win,linux,mac}` sans les accolade et avec seulement 1 d'entre eux attention le mac ne marchera pas sur linux et win et vice versa
 
-### config VScode:
+### Config VScode:
 Mettre cela dans `.vscode/launch.json`
 ```json
 {
